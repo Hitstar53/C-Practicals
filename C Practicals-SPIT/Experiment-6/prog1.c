@@ -29,16 +29,16 @@ void print_mat(int m,int n,int mat[m][n])
 }
 void zero_mat(int m, int n,int mat[m][n])
 {
-    for(int i=0;i<m;i++)
+    for (int i = 0; i < m; i++)
     {
-        for(int j=0;j<n;j++)
-            mat[i][j]=0;
+        for (int j = 0; j < n; j++)
+            mat[i][j] = 0;
     }
 }
 void mul_mat(int m, int n, int mat1[m][n], int a, int b, int mat2[a][b])
 {
     int mat3[m][b];
-    zero_mat(m,b,mat3);
+    zero_mat(m, b, mat3);
     for(int i=0;i<m;i++)
     {
         for(int j=0;j<b;j++)
