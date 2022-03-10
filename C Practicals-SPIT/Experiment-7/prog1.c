@@ -26,7 +26,7 @@ int words(char str[])
 }
 int main()
 {
-    int vc,cc,i;
+    int vc=0,cc=0,i;
     char str[100];
     printf("Enter the string\n");
     scanf("%[^\n]s",str);
