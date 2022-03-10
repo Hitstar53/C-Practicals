@@ -16,8 +16,7 @@ int consonant(char l)
 int words(char str[])
 {
     int count=0;
-    int i=0;
-    for(i=0;str[i]!='\0';i++)
+    for(int i=0;str[i]!='\0';i++)
     {
         if(str[i]==' ')
             count++;
