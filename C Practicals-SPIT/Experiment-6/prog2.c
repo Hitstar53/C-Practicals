@@ -1,13 +1,13 @@
 #include<stdio.h>
 void print_emp(int n, int emp[n][2])
 {
-    printf("Emp No.\tRet Year\n");
+    printf("Ret Year    Emp No.\n");
     for (int i=0;i<n;i++)
     {
         if (i!= 0 && emp[i][0]==emp[i-1][0])
-            printf("\t%d\n", emp[i][1]);
+            printf("            %d\n", emp[i][1]);
         else
-            printf("%d\t%d\n", emp[i][0], emp[i][1]);
+            printf("%d        %d\n", emp[i][0], emp[i][1]);
     }
 }
 void selectionsort(int n, int emp[n][2])
