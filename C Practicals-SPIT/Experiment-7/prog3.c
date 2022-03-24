@@ -2,38 +2,25 @@
 #include<string.h>
 void replacestr(char str[],char wor[],char rep[])
 {
-    int len=strlen(str);
-    int len1=strlen(wor);
-    int len2=strlen(rep);
-    int i,j=0,k,flag=0;
-    char str1[100],str2[100];
-    for(i=0;str[i]!='\0';i++)
+    char str1[100],str2[200];
+    char* match;
+    int i;
+    int wordlen = strlen(wor);
+    int len = strlen(str);
+    strcpy(str1,str);
+    for(i=0;i<len;i++)
     {
-        if(str[i]==wor[j])
+        match = strstr(str, wor);
+        match = match + wordlen;
+        strcpy(str2,match);
+        match = match - wordlen;
+        if(match)
         {
-            k=i;
-            for(j=0;wor[j]!='\0';j++)
-            {
-                if(str[i]==wor[j])
-                    i++;
-                else
-                {
-                    flag=1;
-                    break;
-                }
-            }
-            if(flag==0)
-            {
-                j=0;
-                for(k;rep[j]!='\0';k++)
-                {
-                    str[k]=rep[j];
-                    j++;
-                }
-            }
+            strcpy(match,rep);
         }
+        strcat(str,str2);
+        printf("%s", str);
     }
-    printf("%s\n", str);
 }
 int main()
 {
