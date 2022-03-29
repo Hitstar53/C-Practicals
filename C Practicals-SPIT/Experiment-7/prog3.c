@@ -11,6 +11,9 @@ void replacestr(char str[],char wor[],char rep[])
     for(i=0;i<len;i++)
     {
         match = strstr(str, wor);
+        if(!(match))
+            break;
+        
         match = match + wordlen;
         strcpy(str2,match);
         match = match - wordlen;
@@ -19,8 +22,8 @@ void replacestr(char str[],char wor[],char rep[])
             strcpy(match,rep);
         }
         strcat(str,str2);
-        printf("%s", str);
     }
+    printf("%s", str);
 }
 int main()
 {
