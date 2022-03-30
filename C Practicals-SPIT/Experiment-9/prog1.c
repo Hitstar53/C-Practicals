@@ -27,8 +27,6 @@ int main()
     swap(n,arr);
     printf("After swapping min and max elements:");
     for(i=0;i<n;i++)
-    {
         printf("%d ",arr[i]);
-    }
     return 0;
 }
