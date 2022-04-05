@@ -73,7 +73,7 @@ int main()
                         f[j].seats -= ns;
                         printf("Your flight has been booked succesfully!\n");
                         printf("Flight Details:\nSource: %s\nDestination: %s\n", f[j].strt, f[j].dest);
-                        printf("Departure Time: %d\nArrival Time: %d", f[j].start, f[j].arrival);
+                        printf("Departure Time: %d\nArrival Time: %d\n", f[j].start, f[j].arrival);
                         printf("Seats: %d", ns);
                     }
                     else
