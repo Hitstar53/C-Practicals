@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<string.h>
 typedef struct cricket
 {
     char player[20];
