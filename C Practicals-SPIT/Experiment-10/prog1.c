@@ -17,7 +17,7 @@ int sort(char file[])
     }
     book b;
     fp1 = fopen("Paperbacks.txt","w");
-    fp2 = fopen("Handbacks.txt","w");
+    fp2 = fopen("Hardbacks.txt","w");
     while(fscanf(fp," %c,%[^,],%[^\n]\n",&b.type,b.name,b.author)!=EOF)
     {
         if(b.type=='b')
