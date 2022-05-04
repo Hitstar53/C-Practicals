@@ -8,9 +8,7 @@ int main()
     for(i=1;i<=a;i++)
     {
         if(a%i==0&&b%i==0)
-        {
             gcd=i;
-        }
     }
     lcm = (a*b)/gcd;
     printf("GCD = %d\nLCM = %d\n",gcd,lcm);

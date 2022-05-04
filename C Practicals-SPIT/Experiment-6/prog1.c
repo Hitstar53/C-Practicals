@@ -11,10 +11,10 @@ void add_mat(int m, int n, int mat1[m][n], int a, int b, int mat2[a][b])
 }
 void sub_mat(int m, int n, int mat1[m][n], int a, int b, int mat2[a][b])
 {
-    for (int i = 0; i < m; i++)
+    for(int i=0;i<m;i++)
     {
-        for (int j = 0; j < n; j++)
-            printf("%d ", mat1[i][j] - mat2[i][j]);
+        for(int j=0;j<n;j++)
+            printf("%d ",mat1[i][j]-mat2[i][j]);
         printf("\n");
     }
 }

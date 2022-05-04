@@ -8,14 +8,9 @@ int main()
         for(j=10;j<=99;j++)
         {
             if((reverse(i)==i) || (reverse(j)==j) || (reverse(i)==j) || (reverse(j)==i))
-            {
                 continue;
-            }
             else if(i*j == reverse(i)*reverse(j))
-            {
                 printf("%d*%d = %d*%d\n",i,j,reverse(i),reverse(j));
-            }
-            
         }
     }
     return 0;

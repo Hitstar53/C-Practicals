@@ -1,7 +1,7 @@
 #include<stdio.h>
 int vowel(char l)
 {
-    if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u' || l == 'A' || l == 'E' || l == 'I' || l == 'O' || l == 'U')
+    if(l=='a' || l=='e' || l=='i' || l=='o' || l=='u' || l=='A' || l=='E' || l=='I' || l=='O' || l=='U')
         return 1;
     else
         return 0;

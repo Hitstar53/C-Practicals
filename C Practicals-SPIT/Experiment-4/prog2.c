@@ -20,7 +20,3 @@ int fib(int n)
         return 1;
     else return fib(n-1)+fib(n-2);
 }
-void fibp(int n)
-{
-    if(n);
-}

@@ -7,7 +7,7 @@ int main()
     scanf("%d %d", &m, &n);
     printf("Ackermann series:\n");
     printf("m,n      m=1          m=2           m=3\n");
-    for (i = 1; i <= n; i++)
+    for(i=1;i<=n;i++)
     {
         if(i>=10)
             printf("n=%d   ", i);

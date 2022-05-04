@@ -5,7 +5,6 @@ int main()
 
     printf("Enter a decimal number\n");
     scanf("%d", &dec);
-
     while (dec>0)
     {
         rem = dec % 2;
@@ -14,6 +13,5 @@ int main()
         c *= 10;
     }
     printf("Binary equivalent = %d\n", bin);
-
     return 0;
 }
